@@ -176,6 +176,31 @@ var MANIFESTS_ARRAY = [
     "isInternal": true
   },
   {
+    "id": "29bd516f-4ece-40b7-8028-597cbc65a223",
+    "alias": "SpOfficeUIFabricCore",
+    "componentType": "Library",
+    "version": "1.10.0",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "office-ui-fabric-core",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-office-ui-fabric-core/"
+      ],
+      "scriptResources": {
+        "office-ui-fabric-core": {
+          "type": "path",
+          "path": "dist/office-ui-fabric-core.js"
+        },
+        "@microsoft/load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
     "id": "f97266fb-ccb7-430e-9384-4124d05295d3",
     "alias": "Decorators",
     "componentType": "Library",
@@ -652,31 +677,6 @@ var MANIFESTS_ARRAY = [
           "type": "component",
           "version": "1.10.0",
           "id": "f97266fb-ccb7-430e-9384-4124d05295d3"
-        }
-      }
-    },
-    "isInternal": true
-  },
-  {
-    "id": "29bd516f-4ece-40b7-8028-597cbc65a223",
-    "alias": "SpOfficeUIFabricCore",
-    "componentType": "Library",
-    "version": "1.10.0",
-    "manifestVersion": 2,
-    "loaderConfig": {
-      "entryModuleId": "office-ui-fabric-core",
-      "internalModuleBaseUrls": [
-        "https://localhost:4321/node_modules/@microsoft/sp-office-ui-fabric-core/"
-      ],
-      "scriptResources": {
-        "office-ui-fabric-core": {
-          "type": "path",
-          "path": "dist/office-ui-fabric-core.js"
-        },
-        "@microsoft/load-themed-styles": {
-          "type": "component",
-          "version": "0.1.2",
-          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
         }
       }
     },

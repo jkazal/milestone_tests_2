@@ -24,6 +24,7 @@ import * as strings from 'HelloWorldWebPartStrings';
 import { IPointage } from './IPointage';
 import { IPointages } from './IPointages';
 
+
 export interface IHelloWorldWebPartProps {
   description: string;
   test: string,
@@ -31,7 +32,6 @@ export interface IHelloWorldWebPartProps {
   dropdown: string,
   toggle: boolean
 }
-
 export default class HelloWorldWebPart extends BaseClientSideWebPart <IHelloWorldWebPartProps> {
 
   private _getListData(): Promise<IPointages> {
@@ -81,6 +81,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart <IHelloWorl
   }
 
   public render(): void {
+    console.log(this.context.pageContext.site.id);
     this.domElement.innerHTML = `
       <div class="${ styles.helloWorld }">
     <div class="${ styles.container }">
